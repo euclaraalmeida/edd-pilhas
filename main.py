@@ -1,7 +1,10 @@
-from pilha import*
-entrada=input('''Editor de Pilha v1.2
+from pilha import *
+
+pilha_escolhida=input('escolha')
+
+entrada = input(f'''Editor de Pilha v1.2
 =====================================
-Pilha Selecionada: 3 de 10
+Pilha Selecionada: {pilha_escolhida} de {tamanho_lista}
 [ ] <- topo
 =====================================
 (e) Empilhar
@@ -18,33 +21,3 @@ Pilha Selecionada: 3 de 10
 (s) Sair
 =====================================
 Digite sua opção: [ _ ]''')
-
-while True:
-    if entrada=='e':
-        minha_pilha.empilhar(valor)
-    if entrada=='d':
-        minha_pilha.Desempilhar()
-    if entrada=='t':
-        minha_pilha.tamanho()
-    if entrada=='o':
-        minha_pilha.topo()
-    if entrada=='v':
-        minha_pilha.vazia()
-    if entrada=='p':
-        Pilha_2=Pilha()
-    if entrada=='c':
-        colado=pilha2+minha_pilha
-        print(colado)
-
-
-
-
-
-
-
-
-
-
-
-    if entrada=='s':
-        break
